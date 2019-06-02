@@ -12,7 +12,7 @@ void pri()
         {
             printf("%.2f\t",a[i][j]);
         }
-            printf("\t|%.2f\t|=\t|%.2f|",x[i],x[n+i]);
+            printf("\t|%.4f\t|=\t|%.4f|",x[i],x[n+i]);
             printf("\n");
     }
     printf("\nlambda is %f\n",lambda_new);
