@@ -18,10 +18,8 @@ void pri()
     printf("\nlambda is %f\n",lambda_new);
 }
 
-void main()
+int main()
 {
-
-    int i,j;
     printf("Enter Order of matrix:");
     scanf("%d",&n);
     printf("Enter tolerance error:");
@@ -69,5 +67,5 @@ void main()
         else
             break;
     }
-    getch();
+    return 0;
 }
