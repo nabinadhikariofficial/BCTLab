@@ -33,7 +33,7 @@ int main()
  a = exp(A);
  b = exp(B);
 
- printf("Values are: a=%0.2f and b=%0.2f",A,B);
+ printf("Values are: a=%0.2f and b=%0.2f",a,b);
 
  getch();
  return(0);
