@@ -106,7 +106,7 @@ int main()
      int ch,data;
      while(1)
      {
-         printf("\n\nBinary Search Tree:\n\n\t1. INSERT\n\n\t2. SEARCH\n\n\t3.TRAVERSE\n\n\t4. EXIT");
+         printf("\n\nBinary Search Tree:\n\n\t1. INSERT\n\n\t2. SEARCH\n\n\t3.TRAVERSE\n\n\t4. EXIT\n\n\t");
          scanf("%d",&ch);
          switch(ch)
          {
