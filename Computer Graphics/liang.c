@@ -110,3 +110,4 @@ void main()
 	getch();
 	closegraph();
 }
+// done this 
