@@ -6,29 +6,31 @@ def empty(ch):
     global a,b,x
     if(ch == 1):
         a = 0
-        print("empied 3l vessel ",x)
+        print("empied 3l vessel ", end='')
     if(ch == 2):
         b = 0
-        print("empied 5l vessel ",x)
-    x = [a, b]          # value update
+        print("empied 5l vessel ", end='')
+    x = [a, b]
+    print(x)          # value update
 
 def fill(ch):
     global a,b,x
     if(ch == 1):
         a = 3
-        print("filled 3l vessel ",x)
+        print("filled 3l vessel ",end='')
     if(ch == 2):
         b = 5
-        print("filled 5l vessel ",x)
-    x = [a, b]          # value update
+        print("filled 5l vessel ", end='')
+    x = [a, b]
+    print(x)          # value update
 
 def fillv(t, f):
     global a,b,x
     if(t==1 and f==2):
         if(b!=5):
-            print("no water in 5l first fill ",x)
+            print("no water in 5l first fill ", end='')
         elif(a==3):
-            print("3l vessel is full ",x)
+            print("3l vessel is full", end='')
         elif(a==2):
             b=4
             a=3
@@ -40,7 +42,7 @@ def fillv(t, f):
             b=2
     if(t==2 and f==1):
         if(a==0):
-            print("no water in vessel 1 ",x)
+            print("no water in vessel 1 ", end='')
         elif (a==3):
             if(b==0):
                 b=b+a
@@ -53,12 +55,11 @@ def fillv(t, f):
                 b=1
                 a=0
     x=[a,b]
-    print("Water status",x)
+    print("Tranfer of Water status",x)
 
-        
 while(1):
     if(x==[0,4] or  x==[1,3] or x==[2,2] or x==[3,1]):
-        print("We have 4l water!! ",x)
+        print("We have 4l water!! ", end='')
         break
     empty(1)
     empty(2)
